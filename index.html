@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+    <button id="newGame">НОВАЯ ИГРА</button>
+
+    <div class="panel">
+
+        <div class="indicator">
+            <span>Уровень</span>
+            <div id="lvl">0</div>
+        </div>
+
+        <div class="indicator">
+            <span>Попытки</span>
+            <div id="tries"></div>
+        </div>
+
+        <div class="indicator" style="width:120px">
+            <span>Макс. значение</span>
+            <div id="max"></div>
+        </div>
+
+        <div class="indicator" style="width:150px; background-color: #00BCD4; vertical-align: top;  /*равняется по верхней линии*/">
+            <span>Ваша догадка</span>
+            <input type="number" id="guess">
+        </div>
+
+        <button id="go" style="vertical-align:top; font-size:30px;background-color: #00BCD4;color:#336e75;">GO</button>
+
+        <div class="indicator">
+            <span>Очки:</span>
+            <div id="scores">0
+        </div>
+        </div>
+
+        <div>
+            Загаданное число находится между числом <div class = "newLine" id="smallNumber"></div> и <div class = "newLine" id="maxNumber"></div>
+        </div>
+
+        <div class="logs"></div>
+
+    </div>
+
+    <div class="help">Постарайтесь добраться до 5-ого уровня, <br> чтобы выиграть эту игру. Удачи!</div>
+
+</center>
+<script src="script.js"></script>
+</body>
+</html>
